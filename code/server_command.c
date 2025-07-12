@@ -6,8 +6,8 @@ Function : コマンド処理 (サーバ)
 #include "server_common.h"
 #include "server_func.h"
 
-static void SetIntData2DataBlock(void *data, int intData, int *dataSize);
-static void SetCharData2DataBlock(void *data, char charData, int *dataSize);
+static void SetIntData2DataBlock(unsigned char *data, int intData, int *dataSize);
+static void SetCharData2DataBlock(unsigned char *data, char charData, int *dataSize);
 static int GetRandomInt(int n);
 static int RecvDataInfo = 0;
 

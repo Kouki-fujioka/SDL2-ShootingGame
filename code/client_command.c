@@ -6,8 +6,8 @@ Function : コマンド処理 (クライアント)
 #include "common.h"
 #include "client_func.h"
 
-static void SetIntData2DataBlock(void *data, int intData, int *dataSize);
-static void SetCharData2DataBlock(void *data, char charData, int *dataSize);
+static void SetIntData2DataBlock(unsigned char *data, int intData, int *dataSize);
+static void SetCharData2DataBlock(unsigned char *data, char charData, int *dataSize);
 static void RecvUpData(void);
 static void RecvDownData(void);
 static void RecvLeftData(void);
@@ -168,7 +168,7 @@ Parameters : void *data : 送信用データ (data[0] ~ data[MAX_DATA])
              int intData : int 型データ
              int *dataSize : 送信用データインデックス
 *****************************************************************/
-static void SetIntData2DataBlock(void *data, int intData, int *dataSize)
+static void SetIntData2DataBlock(unsigned char *data, int intData, int *dataSize)
 {
     int tmp;
 

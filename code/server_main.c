@@ -4,7 +4,7 @@ Function : メインルーチン (サーバ)
 *****************************************************************/
 
 #include <SDL2/SDL.h>
-#include "server_common.h"
+#include "server_func.h"
 
 static Uint32 SignalHandler1(Uint32 interval, void *param);
 static Uint32 SignalHandler2(Uint32 interval, void *param);
